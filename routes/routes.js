@@ -1,8 +1,8 @@
 const axios = require('axios');
 const path = require('path');
 
-const PK = "pk_test_7d9921be-b71f-47fa-b996-29515831d911";
-const SK = "sk_test_07fa5e52-3971-4bab-ae6b-a8e26007fccc";
+const PK = "<<public key>>";
+const SK = "<<secret key>>";
 const API = "https://api.sandbox.checkout.com/";
 
 

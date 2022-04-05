@@ -1,7 +1,7 @@
 var payButton = document.getElementById("pay-button");
 var form = document.getElementById("payment-form");
 
-Frames.init("pk_test_...");
+Frames.init("<<public key>>");
 
 
 
