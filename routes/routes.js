@@ -1,8 +1,8 @@
 const axios = require('axios');
 const path = require('path');
 
-const PK = "pk_test_...";
-const SK = "sk_test_...";
+const PK = "pk_test_7d9921be-b71f-47fa-b996-29515831d911";
+const SK = "sk_test_07fa5e52-3971-4bab-ae6b-a8e26007fccc";
 const API = "https://api.sandbox.checkout.com/";
 
 
@@ -61,7 +61,7 @@ var appRouter = function (app) {
         console.log("Initialising Klarna Session");
         let payment;
         try {
-            payment = await axios.post("https://api.sandbox.checkout.com/klarna-external/credit-sessions", {
+            payment = await axios.post("https://api.sandbox.checkout.com/apms/klarna/credit-sessions", {
                 // "purchase_country": "GB",
                 // "currency": "GBP",
                 // "locale": "en-GB",
@@ -139,7 +139,7 @@ var appRouter = function (app) {
                 },
                 "currency": "GBP",
                 "amount": 108000,
-                "capture": false
+                "capture": true
             }, {
                 headers: {
                     'Content-Type': 'application/json',
